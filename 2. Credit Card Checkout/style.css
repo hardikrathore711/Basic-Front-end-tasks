@@ -1,3 +1,10 @@
+:root {
+    --color-dark-blue: #0E273C;
+    --color-purple: #4A306D;
+    --color-light-purple: #A167A5;
+    --color-beige: #D3BCCC;
+    --color-light-pink: #f1ecf4;
+}
 *{
     margin: 0;
     padding: 0;
@@ -7,4 +14,135 @@
 html,body{
     width: 100%;
     height: 100%;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    height: 8vh;
+    border-bottom: 1px solid black;
+    align-items: center;
+    background-color: var(--color-light-pink);
+}
+.name{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    gap: 8px;
+}
+.name img{
+    height: 80%;
+    border-radius: 50%;
+    border: 3px solid #0E273C;
+}
+.name h1{
+    font-size: 30px;
+    /* color: var(--color-dark-blue); */
+    color: var(--color-purple);
+}
+.name h1 span{
+    color: #008bff;
+}
+.search-box{
+    /* display: flex; */
+}
+.search-box input{
+    padding: 9px 10px;
+    min-width: 300px;
+    transform: translate(4px,-1px);
+    border-radius: 3px;
+    border: none;
+    outline: none;
+}
+.search-box i{
+    color: white;
+    background-color: var(--color-dark-blue);
+    padding: 10px;
+}
+.nav-right{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.nav-right i{
+    font-size: 30px;
+}
+.nav-right button{
+    padding: 10px 24px;
+    font-size: 16px;
+    background-color: var(--color-dark-blue);
+    color: var(--color-light-pink);
+}
+.heading{
+    color: #4A306D;
+    margin: 30px 0;
+    height: 15vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bar{
+    width: 65%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+
+}
+.bar h2{
+    color:var(--color-purple);
+}
+.circle{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 2px solid var(--color-purple);
+    font-size: 22px;
+    color: var(--color-purple);
+    font-weight: 600;
+}
+.rule{
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+    justify-content: center;
+}
+.rule hr{
+    height: 3px;
+    color: var(--color-purple);
+    background-color: var(--color-purple);
+}
+.light{
+    color: grey;
+    /* background-color: grey ; */
+}
+.light h2{
+    color: grey;
+}
+.light hr{
+    color: grey;
+    background-color: grey;
+    height: 2px;
+}
+#light{
+    border-color: grey;
+    color: grey;
+}
+.main{
+    width: 65%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left{
+    width: 40%;
+    padding: 40px;
+}
+.right{
+    width: 60%;
+    padding: 40px;
 }
