@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -39,10 +43,65 @@
         <h2 id="light">Completed</h2>
     </div>
     <div class="main">
-        <div class="left">
+        <form action="">
 
-        </div>
-        <div class="right"></div>
+        
+            <div class="left">
+                <h5 id="extra-margin">Buyer Info</h5>
+                <hr>
+                <label for="name">Full Name</label>
+                <input type="text" name="name" id="name">
+                <label for="address">Address</label>
+                <input type="text" name="address" id="address">
+                <label for="contact">Contact</label>
+                <input type="number" name="contact" id="contact">
+                <label for="city">City</label>
+                <input type="text" name="city" id="city">
+                <div class="state">
+                    <div>
+                        <label for="state">State</label>
+                        <input type="text" name="state" id="state">
+                    </div>
+                    <div>
+                        <label for="zip">Zip Code</label>
+                        <input type="number" name="zip" id="zip">
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <h5>Payment Method</h5>
+                <hr>
+                <div class="butt">
+                    <button id="buttactive"><i class="fa-regular fa-credit-card"></i><h3>Credit Card</h3></button>
+                    <button><i class="ri-exchange-dollar-line"></i><h3>Bank Transfer</h3></button>
+                    <button><i class="fa-brands fa-paypal"></i><h3>Paypal</h3></button>
+                </div>
+                <label for="card-name">Name on Card</label>
+                <input type="number" name="card-name" id="card-name">
+                <div class="state">
+                    <div>
+                        <label for="card-no">Card Number</label>
+                        <input type="text" name="card-no" id="card-no">
+                    </div>
+                    <div>
+                        <label for="cvv">CVV</label>
+                        <input type="number" name="cvv" id="cvv">
+                    </div>
+                    <div>
+                        <label for="expiry">Card Expiry</label>
+                        <input type="text" name="expiry" id="expiry" placeholder="MM/YY">
+                    </div>
+                </div>
+                <div class="checkbut">
+                    <button id="buttactive"><h3>Checkout</h3></button>
+
+                </div>
+                
+                    
+    
+                
+            </div>
+        </form>
     </div>
 
 </body>

@@ -15,6 +15,9 @@ html,body{
     width: 100%;
     height: 100%;
 }
+body{
+    font-family: sans-serif;
+}
 nav{
     display: flex;
     justify-content: space-around;
@@ -132,17 +135,85 @@ nav{
     color: grey;
 }
 .main{
-    width: 65%;
+    width: 75%;
+    height: 70vh;
     margin: auto;
+}
+form{
     display: flex;
+    height: 100%;
     justify-content: space-between;
     align-items: center;
+    color: grey;
+    font-family: "Raleway", sans-serif;
+}
+form input{
+    height: 40px;
+    width: 100%;
+    border: 1px solid rgba(128, 128, 128, 0.7);
+    border-radius: 3px;
+    padding: 0 10px;
+    outline: none;
+}
+.left,.right{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center ;
+    
+    padding: 40px;
 }
 .left{
-    width: 40%;
-    padding: 40px;
+    width: 45%;
+    gap: 10px;
 }
 .right{
-    width: 60%;
-    padding: 40px;
+    width: 55%;
+    gap: 30px;
+}
+.state{
+    display: flex;
+    gap: 30px;
+}
+.state div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.state #state{
+    width: 200px;
+}
+.butt{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.butt button{
+    width: 32%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #0E273C;
+}
+.butt button i{
+    font-size: 25px;
+    /* color: #0E273C; */
+}
+#buttactive{
+    background-color: #0E273C;
+    color: white;
+}
+.checkbut{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.checkbut button{
+    padding: 10px 40px;
+}
+
+#extra-margin{
+    margin: 10px 0;
 }
