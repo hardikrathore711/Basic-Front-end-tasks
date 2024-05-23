@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    color: white;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: "Ubuntu Sans Mono", monospace;
+}
+.bg{
+    width: 100%;
+    height: 100%;
+    background-image: url('https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.main{
+    width: 70%;
+    height: 80%;
+    backdrop-filter: blur(3px);
+    border: 3px solid royalblue;
+    border-radius: 50px;
+    display: flex;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.719);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.limg{
+    width: 30%;
+    height: 100%;
+    border-radius: 50px;
+    /* margin: 0 auto; */
+    background-image: url('https://images.unsplash.com/photo-1595078475328-1ab05d0a6a0e?q=80&w=1900&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    
+}
+.container{
+    
+    width: 70%;
+    /* background-color: blueviolet; */
+}
+form{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.container h1{
+    transform: translateX(20px);
+}
+.selgel{
+    display: flex;
+    gap: 100px;
+}
+.selgel label{
+    height: 50px;
+    width: 50px;
+    /* margin: 20px; */
+    /* padding: 20px; */
+
+}
+
+
+.selgel label div{
+    /* padding: 10px; */
+    border-radius: 10px;
+    height: 110px;
+    width: 110px;
+    padding: 5px;
+}
+.selgel label img{
+    height: 100px;
+    border-radius: 10px;
+    /* padding: 10px; */
+    
+}
+
+[type=radio] { 
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+[type=radio] + div{
+    cursor: pointer;
+}
+[type=radio]:checked + div{
+    outline: 5px double royalblue;
+}
