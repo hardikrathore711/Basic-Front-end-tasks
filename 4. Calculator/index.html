@@ -18,7 +18,7 @@
     
                 </div>
                 <div class="container">
-                    <form action="">
+                    <form action="" id="bmiForm">
                         <h1>BMI Calculator</h1>
                         <div class="selgel">
                             <label>
@@ -35,14 +35,34 @@
                             </label>
                         </div>
                         <div class="weight">
-                            <label for="weight">Weight</label>
-                            <input type="number" min="1" max="200" placeholder="(in kg)">
+                            <label for="weight">Weight: </label>
+                            <input type="number" min="1" max="200" placeholder="(kg)" id="weight">
                             <!-- <input type="range" name="weight" id="weight" min="1" max="200"> -->
+                        </div>
+                        <div class="height">
+                            <label for="height">Height: </label>
+                            <input type="number" min="100" max="250" placeholder="(cm)" id="height">
+                        </div>
+                        <button onclick="calculateBMI()">Check BMI</button>
+                        <div class="results">
+                            <h2>Results: </h2>
+                            <p>Your BMI: <span id="bmiResult">0.00</span></p>
+                            <p>Category: <span id="bmiCategory">N/A</span></p>
+                        </div>
+                        <div class="bmi-categories">
+                            <h3>BMI Categories:</h3>
+                            <ul>
+                                <li>Underweight = &lt;18.5</li>
+                                <li>Normal weight = 18.5-24.9</li>
+                                <li>Overweight = 25-29.9</li>
+                                <li>Obesity = BMI of 30 or greater</li>
+                            </ul>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

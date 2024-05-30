@@ -22,12 +22,13 @@ body{
     background-position: center;
 }
 .main{
-    width: 70%;
+    width: 72%;
     height: 80%;
     backdrop-filter: blur(3px);
     border: 3px solid royalblue;
     border-radius: 50px;
     display: flex;
+    /* display: none; */
 }
 .overlay{
     width: 100%;
@@ -56,6 +57,7 @@ form{
     height: 100%;
     display: flex;
     flex-direction: column;
+    /* gap: 80px; */
     justify-content: space-around;
     align-items: center;
 }
@@ -65,6 +67,7 @@ form{
 .selgel{
     display: flex;
     gap: 100px;
+    margin-bottom: 40px;
 }
 .selgel label{
     height: 50px;
@@ -100,4 +103,85 @@ form{
 }
 [type=radio]:checked + div{
     outline: 5px double royalblue;
+}
+form>button{
+    /* display: flex; */
+    /* align-self: flex-end; */
+    background-color: royalblue;
+    background: linear-gradient(to right bottom, royalblue,rgb(25, 76, 228));
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 3px;
+    transition: 0.25;
+    font-family: "Ubuntu Sans Mono", monospace;
+    font-weight: 500;
+    font-size: 16px;
+}
+form>button:hover{
+    cursor: pointer;
+}
+input{
+    padding: 10px 20px;
+    /* width: 6rem; */
+    background: transparent;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    border-width: 1px;
+    border-style: none solid;
+    font-family: "Ubuntu Sans Mono", monospace;
+    font-size: 16px;
+}
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    
+}
+.bmi-categories{
+    padding-left: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bmi-categories>ul{
+    padding: 20px;
+    list-style: none;
+    display: flex;
+    /* gap: 0 px; */
+    /* flex-wrap: wrap; */
+    overflow: hidden;
+}
+.bmi-categories li{
+    padding: 10px 12px;
+    border-radius: 7px;
+    margin-left: 5px;
+    font-weight: 600;
+    
+}
+.bmi-categories li:nth-child(1){
+    background-color: aqua;
+    color: rgb(198, 64, 205);
+}
+.bmi-categories li:nth-child(2){
+    background-color: lime;
+    color: blue;
+}
+.bmi-categories li:nth-child(3){
+    background-color: orange;
+}
+.bmi-categories li:nth-child(4){
+    background-color: tomato;
+}
+
+.results p{
+    font-size: 1.1rem;
+    margin: 5px 0;
+    
+}
+.result span{
+    /* text-decoration: underline; */
+    border: 1px solid white;
 }
